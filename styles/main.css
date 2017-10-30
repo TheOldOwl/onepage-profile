@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* MAIN CONTAINER */
+
+.main-container {
+    min-width: 480px;
+    overflow: hidden;
+}
+
+/* MENU BAR */
+
+/* Unordered list */
+.menu-bar { 
+    list-style-type: none;
+    background-color: #424242;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+    min-width: 480px;
+    overflow: hidden;
+    position: fixed;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #000000;
+}
+
+/* Menu right-align button lists */
+.menu-btn {
+    float: right;
+    width: 120px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+/* Anchor/Link elements - list child */
+.menu-btn a { 
+    display: block;
+    margin: 0 2px;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    transition-duration: 0.5s;
+}
+
+.menu-btn a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.menu-btn a:active {
+    background-color: #FF3300;
+}
+
+/* Menu bar left-align 'TheOldOwl' */
+#logo {
+    float: left;
+    font-size: 40px;
+    line-height: 60px;
+    margin-left: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+}
+
+/* TEXT HEADERS */
+
+/* "The OldOwl" header title */
+#main-title {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 60px;
+    margin-top: 90px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/* Job title header */
+#second-title {
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color: #616161;
+}
+
+/* Design line under main title */
+#main-title-line {
+    background-color: #000000;
+    height: 1px;
+    width: 200px;
+    margin: auto;
+}
+
+/* SOCIAL MEDIA BUTTONS */
+
+/* Buttons container */
+.social-media {
+    height: 80px;
+    width: 100%;
+    min-width: 480px;
+    overflow: auto;
+}
+
+/* Unordered list */
+.social-media ul {
+    display: table;
+    margin: auto;
+    list-style-type: none;
+}
+
+/* List elements */
+.social-media li {
+    float: left;
+    width: 150px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    border: 1px solid #000000;
+    text-align: center;
+    margin: 20px 10px 0 10px;
+    border-radius: 10px;
+}
+
+/* Links */
+.social-media li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    line-height: 100%;
+    padding: 10px 0;
+}
+
+.social-media li:hover {
+    background-color: #424242; 
+}
+
+.social-media li:hover a {
+    color: #ffffff;
+}
+
+/* Button images */
+.icon {
+    vertical-align: top;
+}
+
+/* SKILLS TABLES */
+
+/* Main container */
+.form-container {
+    margin-top: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 480px;
+    width: 100%;
+    height: 400px;
+}
+
+/* Individual containers */
+form {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* FORM POSITIONING */
+.web-form {
+    width: 23%;
+    margin-left: 2%;
+}
+
+.language-form {
+    width: 23%;
+    margin-left: 1%;
+}
+
+.about-form {
+    width: 48%;
+    margin-left: 1%;
+}
+
+.hobbies-form {
+    width: 23%;
+    position: relative;
+    top: -50%;
+    left: 26%;
+}
+
+/* Shared individual containers properties */
+fieldset {
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.title {
+    margin: 20px 0 0 20px;
+    font-size: 18px;
+    color: #616161;
+}
+
+legend {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.box-web {
+    height: 100%;
+}
+
+.box-language {
+    height: 50%;
+}
+
+.box-hobbies {
+    height: 50%;
+}
+
+.box-about {
+    height: 100%;
+}
+
+/* Unordered lists */
+.box-list {
+    list-style-type: none;
+    font-size: 18px;
+    color: #616161;
+}
+
+.box-list li {
+    display: block;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    max-width: 80%;
+}
+
+.box-list-language {
+    margin: 30px 0 0 30px
+}
+
+.box-list-hobby {
+    margin: 5px 0 0 30px;
+}
+
+.box-list-about {
+    margin: 10px 30px 0 30px;
+    text-align: justify;
+}
+
+#form-container-line {
+    margin: 0 auto;
+    background-color: #000000;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 1px;
+}
+
+/* Progres bar style */
+
+.bar {
+    border: 1px solid #000000;
+    width: 70%;
+    margin: 5px 0 0 20px;
+    border-radius: 5px;
+}
+
+.html-progres {
+    background-color: #000000;
+    height: 18px;
+    width: 70%;
+}
+
+.css-progres {
+    background-color: #000000;
+    height: 18px;
+    width: 80%;
+}
+
+.js-progres {
+    background-color: #000000;
+    height: 18px;
+    width: 30%;
+}
+
+.illustrator-progres {
+    background-color: #000000;
+    height: 18px;
+    width: 60%;
+}
+
+.photoshop-progres {
+    background-color: #000000;
+    height: 18px;
+    width: 50%;
+}
+
+/* PORTFOLIO */
+.section-container {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    margin: 20px 0 0 30px;
+    width: 100%;
+}
+
+.portfolio-line {
+    height: 3px;
+    background-color: #000000;
+    width: 120px;
+    margin-left: 100px;
+}
+
+.portfolio-section {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%;
+    background-color: #424242;
+    margin-top: 30px;
+}
+
+.portfolio-image {
+    width: 100%;
+    opacity: 1;
+    background-color: #424242;
+    height: 30%;
+}
+
+.portfolio-image p {
+    text-align: center;
+}
+
+.portfolio-image:hover {
+    opacity: 0.7;
+}
+
+.portfolio-text {
+    background-color: #000000;
+    width: 100%;;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* CONTACT FORM */
+.name-contact{
+    line-height: 1em;
+    margin-top: 30px;
+}
+
+.name-contact p{
+    width: 150px;
+    padding-left: 10px;
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    vertical-align: top;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.name-contact input {
+    width: 600px;
+    font-size: 16px;
+    height: 4vh;
+    vertical-align: bottom;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.name-contact textarea {
+    width: 600px;
+    font-size: 16px;
+    height: 20vh;
+    vertical-align: bottom;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 10px 0 0 10px;
+}
+
+::placeholder {
+    color: #A6A4A4;
+}
+
+.submit-button {
+    width: 150px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    line-height: 2em;
+    border-radius: 10px;
+}
+
+.contact-form-container {
+    display: inline-flex;
+}
+
+.contact-data-container {
+    margin: 30px 0 0 200px;;
+}
+
+.contact-data-container ul {
+    list-style-type: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.contact-data-container li {
+    margin: 0 0 10px 0;
+}
+
+.contact-form {
+    height: 50%;
+}
+
+/* FOOTER BAR */
+.footer-bar {
+    background-color: #424242;
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-bar p {
+    display: inline;
+    line-height: 50px;
+    margin: 0 40px;
+    color: #000000;
+}
+
+#footer-right-text {
+    float: right;
+    color: #ffffff;
+}
+
+span {
+    color: #FF3300;
+}
